@@ -15,4 +15,4 @@ myswitch.offText = @"OFF";
 
 UI界面
 --------
-![ZXSSwitch](ZXSSwitch/Snip20180425_2.png)
+![ZXSSwitch](https://github.com/CoderZXS/ZXSSwitch/blob/master/ZXSSwitch.png)
