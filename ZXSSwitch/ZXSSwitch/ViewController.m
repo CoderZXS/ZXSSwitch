@@ -20,10 +20,11 @@
 
     ZXSSwitch *myswitch = [[ZXSSwitch alloc] initWithFrame:CGRectMake(200, 200, 80, 31)];
     [self.view addSubview:myswitch];
+    [myswitch addTarget:self action:@selector(handleSwitchEvent:) forControlEvents:UIControlEventValueChanged];
     myswitch.backgroundColor = [UIColor clearColor];
     myswitch.onText = @"ON";
     myswitch.offText = @"OFF";
-    [myswitch addTarget:self action:@selector(handleSwitchEvent:) forControlEvents:UIControlEventValueChanged];
+
 }
 
 
