@@ -1,4 +1,9 @@
-
+/*
+     ZXSSwitch(https://github.com/CoderZXS/ZXSSwitch)
+     Created by CoderZXS on 2016/4/12.
+     Copyright © 2016年 CoderZXS. All rights reserved.
+     模仿iOS7风格，实现Switch控件可以自定义文字
+ */
 
 #import "ZXSSwitch.h"
 
@@ -6,7 +11,6 @@
 #define ZXSSwitchMaxHeight 31.0f
 #define ZXSSwitchMinHeight 31.0f
 #define ZXSSwitchMinWidth 51.0f
-
 
 @interface ZXSSwitch ()
 
@@ -24,7 +28,6 @@
 #pragma mark - 系统方法
 
 - (id)initWithFrame:(CGRect)frame {
-
     if (self = [super initWithFrame:[self roundRect:frame]]) {
         [self commonInit];
     }
@@ -32,7 +35,6 @@
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-    
     if (self = [super initWithCoder:aDecoder]) {
         [self commonInit];
     }
@@ -41,13 +43,11 @@
 }
 
 - (void)setBounds:(CGRect)bounds {
-    
     [super setBounds:[self roundRect:bounds]];
     [self setNeedsLayout];
 }
 
 - (void)setFrame:(CGRect)frame {
-    
     [super setFrame:[self roundRect:frame]];
     [self setNeedsLayout];
 }
@@ -63,6 +63,7 @@
     self.containerView.frame = self.bounds;
     
     if (!self.isOn) {
+        
         // frame of off status
         self.onContentView.frame = CGRectMake(-1 * CGRectGetWidth(self.containerView.bounds),
                                               0,
@@ -79,6 +80,7 @@
                                          ZXSSwitchKnobWidth,
                                          ZXSSwitchKnobWidth);
     } else {
+        
         // frame of on status
         self.onContentView.frame = CGRectMake(0,
                                               0,

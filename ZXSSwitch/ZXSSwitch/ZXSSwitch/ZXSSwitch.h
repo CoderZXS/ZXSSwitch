@@ -1,4 +1,9 @@
-
+/*
+  ZXSSwitch(https://github.com/CoderZXS/ZXSSwitch)
+  Created by CoderZXS on 2016/4/12.
+  Copyright © 2016年 CoderZXS. All rights reserved.
+  模仿iOS7风格，实现Switch控件可以自定义文字
+ */
 
 #import <UIKit/UIKit.h>
 
